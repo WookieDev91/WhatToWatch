@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Find Me A Movie!</title>
+    <meta name="description" content="Generator losowych filmów">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i|Open+Sans:300,400,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+
+<header class="header">
+    <div class="logo">Wookie</div>
+    <section class="page-header active">
+        <div class="background_start active">
+
+            <h1>Szukasz filmu?</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae deleniti distinctio nam nostrum rerum sint. Aperiam cumque ex iusto magni mollitia obcaecati perspiciatis provident quo sapiente voluptas? Consectetur consequatur fuga magnam pariatur provident repellendus repudiandae. Assumenda, atque deserunt dignissimos dolorem dolorum eius explicabo, hic in ipsum nostrum quia quod sunt!</p>
+            <button class="randomize">Znajdź film!</button>
+        </div>
+    </section>
+</header>
+
+
+
+<section class="movie hidden">
+
+
+    <div class="background_cover"></div>
+
+    <div class="logo">Wookie</div>
+
+    <div class="row">
+        <!--LEFT-SIDE-->
+        <div class="leftSide">
+            <div class="image_cover">
+                <img class="image_cover_poster"
+                     src="" alt="movie_poster"/>
+            </div>
+        </div>
+        <!--//RIGHT SIDE//-->
+        <div class="rightSide">
+            <div class="card_info">
+
+                <div class="movie_header">
+                    <h2 class="card_title"></h2>
+                    <span class="card_rating"></span>
+                </div>
+
+                <h6 class="card_director"></h6>
+                <h6 class="card_releaseDate"></h6>
+                <div class="card_description">
+                    <h3> Opis filmu:</h3>
+                    <p class="card_description_info"></p></div>
+
+                <div class="isThereNetflix visible">
+                    <a class="netflix" href='' target="_blank">
+                        <img class="icon netflix" src="img/netflix_none.png"/>
+                    </a>
+                </div>
+                <a class="trailer" href='' target="_blank">
+                    <button class="youtube">   Zobacz zwiastun &nbsp;  &#9654</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<button class="anotherRandom hidden">Szukaj innego filmu </button>
+
+<section class="youtube">
+    <div class="page_youtube hiddenyt">
+        <button>Zamknij</button>
+    </div>
+
+    <footer class="page-footer">
+        <p class="page-footer-copy"> &copy; Designed & Developed by Wookie || 2018 </p>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

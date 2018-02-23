@@ -1,0 +1,271 @@
+// RESET & BASING SETTINGS //
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta Mahee', sans-serif;
+  font-size: 10px;
+
+}
+
+.active {
+  opacity: 1;
+  z-index: 1;
+}
+.hidden {
+  opacity: 0;
+  z-index: 0;
+  display: none;
+}
+.hiddenyt {
+  opacity: 0;
+  z-index: 0;
+  display: none;
+}
+
+//ANIMACJA TŁA DLA BODY//
+body {
+
+  width: 100wh;
+  height: 90vh;
+  color: #fff;
+  background: linear-gradient(-45deg, #407f9b,#f9a11b, #e70f55,#50a5c9 );
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  z-index: 0;
+  overflow:hidden;
+}
+
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 25%
+  }
+  50% {
+    background-position: 100% 75%
+  }
+  100% {
+    background-position: 0% 25%
+  }
+}
+
+
+// HEADER //
+header {
+  position: relative;
+  overflow:hidden;
+  .logo {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    font-family: 'Molle', cursive;
+    font-size: 2.6rem;
+    letter-spacing: .4rem;
+    font-weight: 700;
+    color: white;
+    content:" ";
+    display: block;
+    z-index: 3;
+  }
+}
+
+//PAGE - HEADER//
+.page-header {
+  position: relative;
+  max-width: 100vw;
+  height: 100vh;
+  color: #fff;
+
+  .background_start {
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 100vh;
+    height: 100vh;
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
+    h1 {
+      font-size: 6rem;
+      font-family: 'Molle', cursive;
+      letter-spacing: 1rem;
+      text-align: center;
+      color: azure;
+      margin-bottom: 1.5rem;
+
+    }
+    p {
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-weight: 300;
+
+    }
+    button {
+      display: block;
+      position: absolute;
+      content: '';
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 30px;
+      width: 200px;
+      height: 50px;
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      font-size: 2rem;
+      transition: .5s ease-in;
+      &:hover {
+        background: #5ba1e7;
+        border: transparent;
+        color: rgb(244, 245, 249);
+        border-radius: 25px;
+      }
+    }
+  }
+}
+//HERO -CARD - BACKGROUND//
+.movie{
+  position: relative;
+}
+.background_cover {
+  position: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  filter: blur(5px);
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  font-family: 'Molle', cursive;
+  font-size: 2.6rem;
+  letter-spacing: .4rem;
+  font-weight: 700;
+  color: white;
+  content: " ";
+  display: block;
+  z-index: 3;
+}
+
+
+//CARD -INFO//
+.row {
+  position:absolute ;
+  top: 20vh;
+  left:50%;
+  content:'';
+  transform: translateX(-50%);
+  width: 100rem;
+  height: 50rem;
+  background-color: white;
+  border-radius: .3rem;
+  color: black;
+  z-index: 3;
+}
+.leftSide {
+  display: inline-block;
+  width: 35rem;
+  height: 50rem;
+  float: left;
+  overflow: hidden;
+  background: transparent;
+  img {
+    width: 35rem;
+    height: 50rem;
+  }
+}
+.rightSide {
+  display: inline-block;
+  width: 60rem;
+  height: 50rem;
+  margin-left: 2rem;
+  .movie_header {
+    margin-top: 4rem;
+    padding-top: 3rem;
+  }
+  .card_info h2 {
+    width: 40rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: #808080;
+  }
+}
+.movie h6 {
+  margin: 1rem 0;
+}
+.movie span {
+  font-size: 1.6rem;
+  float: right;
+  color: #b81926;
+  font-weight: 500;
+}
+.movie h3{
+  margin: 1.5rem 0;
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: #808080;
+}
+.movie p{
+  margin-top: .5rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+.icon{
+  position:absolute;
+  bottom: 2rem;
+  right: 2rem;
+  float: right;
+  width: 50px;
+  height: 50px;
+
+}
+.movie button{
+
+  position: absolute;
+  bottom: 2rem;
+  border: 1px solid #ffbd63;
+  background-color: #e70f55;
+  color: white;
+  font-size: 1.2rem;
+  height: 4rem;
+  width: 15rem;
+  line-height: 4.1rem;
+}
+
+.anotherRandom {
+  position: absolute;
+  content: '';
+  display: block;
+  background: transparent;
+  border: 4px solid white;
+  padding: 20px;
+  z-index: 6;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 18rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px #333333;
+
+}
+
+//PAGE - FOOTER//
+.page-footer-copy{
+  position:absolute;
+  display: inline;
+  text-transform: uppercase;
+  font-weight: 700;
+  left: 50%;
+  bottom:5%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
