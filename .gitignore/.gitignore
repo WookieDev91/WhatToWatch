@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+sass/
+scss/
+gulpfile.js
+package.json
+*.log
